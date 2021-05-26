@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace comics.api.Services
 {
-    interface IProduct
+    public interface IProduct
     {
         public Product Create(Product product);
 
