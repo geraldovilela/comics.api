@@ -1,4 +1,6 @@
 using comics.api.Data;
+using comics.api.Services;
+using comics.api.Services.Implementation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,7 @@ namespace comics.api
         {
             services.AddDbContextPool<DBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Local")));
 
+            services.AddScoped<IProductService, IProductServiceImplementation>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

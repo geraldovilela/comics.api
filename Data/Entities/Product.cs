@@ -7,6 +7,11 @@ namespace comics.api.Data.Entities
 {
     public class Product : Entity
     {
+        public Product()
+        {
+
+        }
+
         /// <summary>
         /// Name do Produto, string;
         /// </summary>

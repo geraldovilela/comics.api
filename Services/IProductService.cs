@@ -8,14 +8,14 @@ namespace comics.api.Services
 {
     public interface IProductService
     {
-        public Product Create(Product product);
+        public Product Create(object data);
 
         public Product Update(Product productChanges);
         public List<Product> GetAll();
 
         public Product Get(string guid);
 
-        public void Delete(string guid);
+        public Task<string> Delete(string guid);
 
 
     }

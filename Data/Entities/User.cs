@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -22,6 +23,7 @@ namespace comics.api.Data.Entities
         /// <summary>
         /// Guid para exposição e requests mais seguras;
         /// </summary>
+        
         public Guid Guid { get; set; }
 
     }
